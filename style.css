@@ -1,0 +1,130 @@
+html,head, body {
+    height: 100%;
+    width: 100%;
+    
+  }
+  header{
+    color:white;
+    background-color:#a28557;
+    
+  }
+  body{
+    font-family: Calibri, Helvetica, sans-serif;
+    
+
+      background: linear-gradient(to left,#ffebcd,#d69d47);
+
+      color: whitesmoke;
+
+  }
+  
+  
+  input[type=text], input[type=password], textarea {
+    width: 15%;
+    padding: 5px;
+    margin: 5px 5px 22px  22px;
+    display: inline;
+    border: none;
+    background: #f1f1f1;
+  }
+  input[type=text]:focus, input[type=password]:focus {
+    background-color:#f1f1f1;
+    outline: none;
+  }
+
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  .registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+  .registerbtn:hover {
+    opacity: 1;
+  }
+
+  
+  
+ #fieldNames{
+    width: 30%;
+    padding: 5px;
+    text-align: left;
+    margin: 0px 10px 0px 10px;
+    display: inline-block;
+    border: none;
+    color: white;
+    
+  } 
+ 
+  
+  
+  #container{
+    width: 15%;
+    padding: 5px;
+    text-align:left;
+    margin: 0px 0px 15px 18px;
+    display: inline-block;
+    border: none;
+    
+    color:white;
+  }
+  
+  .err { background: #ffe6ee; border: 1px solid #b1395f; }
+  .emsg { color: #c12020; font-weight: bold; }
+  
+  .container1{
+    
+    width: 50%;
+    padding: 0px;
+    text-align:left;
+    margin: 0px 500px;
+    display: inline-block;
+    border: none;
+    
+    color:white;
+  }
+
+  
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+
+  
+
+  
+  #result-table{
+    width: 50%;
+    padding: 0 0;
+    text-align: left;
+    margin:0 550px;
+    display: inline-block;
+    border: none;
+    color:black;
+    
+  }
+  .required:after{
+    content: "*";
+    color: red;
+  }
+
+  
+  #pswrd_2,#uname,#pswrd_1,#email,#zip,#values{
+    width: 20%;
+    padding: 5px;
+    text-align:left;
+    margin: 5px 5px 22px 22px;
+    display: inline-block;
+    border: none;
+    
+    color:black;
+  }
+  

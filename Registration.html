@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<!--<div class="bgimg" style="background-image: url('MicrosoftTeams-image.png');">-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Customer Registration</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    button {
+      background-color: #a28557;
+      width: 15%;
+      padding: 5px;
+      text-align: center;
+      margin: 20px 50px 20px 50px;
+      display: inline-block;
+      border: none;
+
+    }
+
+
+
+    #points {
+      color: #474747;
+      background: linear-gradient(to left, #ffebcd, #d69d47);
+
+      padding: 0 0px 0px;
+
+    }
+
+
+    .two_third {
+      list-style: none;
+      float: left;
+      width: calc(100% - 65%-10%);
+    }
+
+
+
+
+    img {
+
+      width: 65%;
+      height: 700px;
+      max-width: 100%;
+      max-height: 100%;
+      float: left;
+      border: none;
+      line-height: normal;
+      vertical-align: middle;
+      position: relative;
+      margin-right: 10px;
+    }
+  </style>
+  <script src="script.js"></script>
+
+</head>
+
+
+
+<body align="justify center">
+
+
+
+
+
+  <div id="points" class="group">
+    <header>
+      <h1 align="center">
+        Pay Cart
+      </h1>
+    </header>
+
+
+    <br>
+    <div class="one_third"><a class="imgover" href="#"><img src="124378.webp" alt=""></a>
+    </div>
+    <div class="two_third">
+      <h2 align="center">
+        Customer Registration
+      </h2>
+      <form id="c1" action="Ackw.html" onsubmit="callme()">
+
+        <label class="required" id="fieldNames"><b> Username</b> </label>
+        <input class="userName" id="uname" type="text" name="username" minlength="5" maxlength="20" required /> <br>
+
+        <label class="required" id="fieldNames"> <b>Password</b> </label>
+        <input id="pswrd_1" name="pswrd_1" type="password" placeholder="Enter Password" minlength="5" maxlength="20"
+          required /> <br>
+
+        <label class="required" id="fieldNames"> <b>Confirm Password</b> </label> <input type="password" id="pswrd_2"
+          name="pswrd_2" placeholder="Confirm Password" required minlength="5" maxlength="20" />
+        <br>
+
+        <label class="required" id="fieldNames"> <b>FullName</b> </label>
+        <input id="fname" type="text" placeholder="First Name" name="First Name" minlength="5" maxlength="20"
+          required /> <input id="lname" type="text" name="Last Name" placeholder="Last Name" minlength="5"
+          maxlength="20" required /> <br>
+
+        <tr>
+          <td> <label class="required" id="fieldNames" for="email"><b>Email</b></label></td>
+          <td> <input type="email" id="email" name="email" placeholder="abc@gmail.com" pattern="^.+@gmail\.com$"
+              required>
+          </td>
+        </tr>
+
+        <br>
+        <tr>
+          <td>
+            <label class="required" id="fieldNames" for="address"><b>Address</b></label>
+          </td>
+          <td>
+            <input type="text" name="address" id="address" placeholder="Address Line 1" required></input>
+          </td>
+          <td> <input type="text" name="address" id="address" placeholder="Address Line 2" required></input>
+          </td>
+        </tr>
+
+        <br>
+
+
+        <body onload="resetSelection()">
+          <label class="required" id="fieldNames"><b>State</b></label>
+          <div id="container">
+
+            <select id="countrySelect" size="1" onchange="makeSubmenu(this.value)">
+
+
+              <option value="disabled selected">Choose State</option>
+
+
+
+              <option>Odisha</option>
+
+              <option>Maharashtra</option>
+
+              <option>Kerala</option>
+
+              <option>Karnataka</option>
+
+              <option>AndhraPradesh</option>
+
+              <option>TamilNadu</option>
+
+              <option>MadhyaPradesh</option>
+
+              <option>UttarPradesh</option>
+
+            </select>
+          </div>
+        </body>
+        <br>
+
+
+
+
+        <body onload="resetSelection()">
+
+          <label class="required" id="fieldNames"><b>City</b></label>
+          <div id="container">
+
+            <select id="citySelect" size="1">
+
+              <option value="disabled selected">Choose City</option>
+
+              <option></option>
+
+
+
+            </select>
+          </div>
+          <br>
+
+
+          <label class="required" id="fieldNames"><b>Postal Zip Code</b></label>
+
+
+          <input id="zip" name="zip" type="number" minlength="6" maxlength="6" > <br>
+
+
+          <body onload="resetSelection()">
+            <label class="required" id="fieldNames" for="country"><b>Country</b> </label>
+            <div id="container">
+
+              <select name="country" id="country">
+                <option value="disabled selected">Choose Country</option>
+
+                <option>India</option>
+
+                <option>Russia</option>
+
+                <option>South Korea</option>
+
+                <option>Japan</option>
+
+                <option>U S A</option>
+              </select>
+            </div>
+          </body>
+
+          <br>
+
+
+
+
+
+
+
+          <label class="required" id="fieldNames"> <b>Phone</b> </label>
+
+          <input id="values" type="text" name="country code" placeholder="AreaCode" size="15" required />
+          <input id="values" type="number" name="phone" maxlength="10" minlength="10" size="15" /> <br>
+
+          <button type="submit">Register</button>
+          <button type="reset">Reset</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+        button{
+    background-color: #a28557;
+    width: 15%;
+    padding: 5px;
+    text-align: center;
+    margin: 20px 50px 20px 0px;
+    display: inline-block;
+    border: none;
+    
+  }
+    </style>
+<head>
+    
+    <header>
+        <h1 align="center">
+          Pay Cart
+        </h1>
+      </header>
+</head>
+    
+    
+    
+    <body align="justify center">
+    
+        <h2 align="center">
+            Acknowledgement Page
+          </h2>
+
+        <div id="result-table">
+            <p><b>Registration Successful</b></p>
+            <p id="fieldNames1">Customer User Name : <span id="first"></span></p>
+            <p id="fieldNames1">Customer Email : <span id="second"></span></p>
+            <a href="Registration.html"><button>Go Back</button></a>
+            <a href="login.html"><button>Login</button></a>
+            <script>
+                function backfunction(){
+                    window.location.href="Registration.html";
+                }
+            </script>
+         
+        </div>
+
+        <script>
+            window.onload = function() {
+                document.getElementById('first').innerText = localStorage.getItem('name');
+                document.getElementById('second').innerText = localStorage.getItem('email');
+                
+
+            };
+        </script>
+        
+    </body>
+</html>
